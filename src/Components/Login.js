@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles.css";
+import "../App.js";
 // import Signup from "./Signup";
 
 function Login(){
@@ -81,7 +82,7 @@ function Login(){
     <div className="app">
       <div className="login-form">
        
-        {isSubmitted ?  : renderForm}
+        {isSubmitted ? <App /> : renderForm}
       </div>
     </div>
   );
